@@ -263,7 +263,7 @@ nav a:hover {
     left: 65%;
     transform: translate(-50%, -50%);
 }
-
+/* 
 .brain-lines {
     position: absolute;
     inset: 0;
@@ -345,9 +345,9 @@ nav a:hover {
 .hero:has(.brain-trigger:hover) .line {
     opacity: 1;
     
-}
+} */
 
-.brain-connections {
+/* .brain-connections {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -368,7 +368,7 @@ nav a:hover {
 
 .hero:has(.brain-tigger:hover) .connection-ai {
     opacity: 1;
-}
+} */
 
 @media (max-width: 768px) {
     .hero {
@@ -797,16 +797,26 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 40px;
-    background: linear-gradient(135deg, #f8faff, #eef4ff);
+    border-top: 2px solid #bfdbfe;
+    position: relative;
+    overflow: hidden;
+    
+    
 }
 
+
+
 .newsletter-content {
-    background-color: #ffffff;
+    background-color: #eef4ff;
     border: 1px solid #e2e8f0;
     border-radius: 18px;
     padding: 50px 40px;
     text-align: center;
+    border: 1px solid #dbe7f7;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.10);
+    position: relative;
 }
+
 
 .newsletter-label {
     display: inline-block;
@@ -854,7 +864,7 @@ nav a:hover {
 .newsletter-form button {
     padding: 13px 22px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #2563eb;
     color: #fff;
     font-size: 14px;
@@ -874,6 +884,38 @@ nav a:hover {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     outline: none;
 }
+
+.newsletter-content > i {
+    font-size: 28px;
+    color: #2563eb;
+    transition: 0.3s;
+    
+}
+
+.newsletter-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    margin: 0 auto;
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.12);
+}
+
+.newsletter-icon:hover {
+    transform: translateY(-6px) scale(1.06);
+}
+
+.newsletter-icon i {
+    font-size: 22px;
+    color: #2563eb;
+}
+
+
+
 
 /* footer  */
 .footer {
