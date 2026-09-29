@@ -18,6 +18,7 @@ readmore.addEventListener("click",function (event) {
     console.log(event.target);
     console.log(event.target.classList);
     event.target.classList.toggle("clicked");
-    extraInfo.style.display = "book";
+    
+    extraInfo.classList.toggle("show")
 });
 
