@@ -160,6 +160,12 @@ body {
     font-size: 14px;
     font-weight: 600;
     transition:  transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.ai-read-more i {
+    font-size: 15px;
+    transition: transform 0.3s ease;
 }
 
 .ai-read-more:hover {
@@ -181,14 +187,67 @@ ai-read-more.clicked {
 .ai-extra-info {
     width: 92%;
     max-width: 1200px;
+    box-sizing: border-box;
     margin: 30px auto 60px;
-    padding: 35px;
+    padding: 40px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height o.6s ease, opacity 0.4s ease;
+    
+}
+
+
+
+.ai-extra-item {
+    margin-top: 24px;
+    padding-top: 25px;
+    border-top: 1px solid #e2e8f0;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ai-extra-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ai-extra-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.ai-extra-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+.ai-extra-info h2 {
+    margin-bottom: 14px;
+    font-size: 28px;
+    font-weight: 750;
+    color: #0f172a;
+}
+
+
+.ai-extra-info p {
+    max-width: 720px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #64748b;
 }
 
 .ai-extra-info.show {
-    display: block;
+    max-height: 500px;
+    opacity: 1;
+    width: 92%;
 }
+
