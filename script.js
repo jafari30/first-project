@@ -56,15 +56,31 @@ readmore.addEventListener("click",function (event) {
 
 // توضیحات عنوان های کوچک
 
+const aiCards = document.querySelectorAll(".ai-info-card");
+const cardExtraInfo = document.querySelector(".ai-card-extra-info");
+const cardContent = document.querySelectorAll(".ai-card-extra-content");
+
+aiCards.forEach(function (card) {
+    card.addEventListener("click", function () {
+        const cardName = card.dataset.card;
+
+        const selectContent = document.querySelector('.ai-card-extra-content[data-card="' + cardName + '"]');
+
+        if (selectContent.classList.contains("show")) {
+            selectContent.classList.remove("show");
+            cardExtraInfo.classList.remove("show");
+        } else {
+            cardContent.forEach(function (content) {
+                content.classList.remove("show");
+            });
+
+            selectContent.classList.add("show");
+        cardExtraInfo.classList.add("show");
+
+        }  
+    });
+});
+
+   
 
 
-// const aiCard = document.querySelectorAll(".ai-info-card");
-// const aiCardExtraInfo = document.querySelector(".ai-card-extra-info");
-// console.log(aiCardExtraInfo);
-
-// aiCard.forEach(function (card) {
-//     card.addEventListener("click",function () {
-//         console.log("Card clicked");
-//         aiCardExtraInfo.classList.toggle("show");
-//     });
-// });

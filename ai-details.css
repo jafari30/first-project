@@ -123,6 +123,22 @@ body {
     color: #64748b;
 }
 
+/* برای نشان دادن محتوا */
+.ai-card-extra-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: max-height 0.6s ease, opacity 0.4s ease, margin-top 0.5s ease;
+    
+
+}
+
+.ai-card-extra-content.show {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
 
 
 .ai-info-card {
@@ -236,7 +252,7 @@ ai-read-more.clicked {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height o.6s ease, opacity 0.4s ease;
+    transition: max-height 0.6s ease, opacity 0.4s ease;
     
 }
 
@@ -291,3 +307,20 @@ ai-read-more.clicked {
     width: 92%;
 }
 
+
+/* گزینه برگشت */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 25px 4%;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-home:hover {
+    color: #1d4ed8;
+    transform: translateX(-3px);
+}
