@@ -1,0 +1,126 @@
+.mobile-detail {
+    width: 92%;
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+    box-sizing: border-box;
+
+}
+
+.mobile-detail-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.mobile-detail-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.mobile-detail-content {
+    flex: 1;
+    min-width: 0;
+
+}
+
+.mobile-detail-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.mobile-detail-content h1 {
+    margin-bottom: 18px;
+    color: #0f172a;
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+.mobile-detail-content p {
+    max-width: 560px;
+    margin-bottom: 28px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.mobile-detail-cards {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.mobile-info-card {
+    flex: 1 1 0;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.mobile-info-card i {
+    display: block;
+    margin-bottom: 12px;
+    color: #2563eb;
+    font-size: 24px;
+}
+
+
+.mobile-info-card h3 {
+    margin-bottom: 8px;
+    color: #0f172a;
+    font-size: 17px;
+}
+
+.mobile-info-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.mobile-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.mobile-detail-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+}
+
+/* گزینه برگشت */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 25px 4%;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-home:hover {
+    color: #1d4ed8;
+    transform: translateX(-3px);
+}
+
+.mobile-card-extra-info {
+    
+}
+
