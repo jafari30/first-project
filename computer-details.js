@@ -10,7 +10,6 @@ computerCards.forEach(function (card) {
             item.classList.remove("active");
         });
         card.classList.add("active");
-        console.log(cardName);
 
         const selectContent = document.querySelector('.computer-card-extra-content[data-card="' + cardName + '"]');
 
@@ -22,7 +21,7 @@ computerCards.forEach(function (card) {
             return;
         }
 
-        
+
         console.log(selectContent);
 
         computerExtraContents.forEach(function(content) {
