@@ -1,0 +1,154 @@
+.gaming-details {
+    width: 92%;
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+    box-sizing: border-box;
+}
+
+.gaming-detail-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.gaming-detail-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gaming-detail-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.gaming-detail-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.gaming-detail-content h1 {
+    margin-bottom: 18px;
+    color: #0f172a;
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+.gaming-detail-content > p {
+    max-width: 560px;
+    margin-bottom: 28px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.gaming-detail-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 18px;
+    margin-top: 30px;
+
+}
+
+.gaming-info-card {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.gaming-info-card i {
+    display: block;
+    margin-bottom: 12px;
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.gaming-info-card h3 {
+    margin-bottom: 8px;
+    color: #0f172a;
+    font-size: 17px;
+}
+
+.gaming-info-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.gaming-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* گزینه برگشت */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 25px 4%;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-home:hover {
+    color: #1d4ed8;
+    transform: translateX(-3px);
+}
+
+.gaming-card-extra-info {
+    width: 92%;
+    max-width: 1200px;
+    margin: 30px auto 60px;
+    padding: 32px 36px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06);
+    display: none;
+}
+
+.gaming-card-extra-content {
+    display: none;
+}
+
+.gaming-card-extra-content h3 {
+    margin-bottom: 12px;
+    color: #0f172a;
+    font-size: 24px;
+}
+
+.gaming-card-extra-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.gaming-card-extra-info.show {
+    display: block;
+}
+
+.gaming-card-extra-content.show {
+    display: block;
+}
