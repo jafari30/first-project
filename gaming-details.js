@@ -4,7 +4,6 @@ const gamingExtraContents = document.querySelectorAll(".gaming-card-extra-conten
 
 gamingCards.forEach(function (card) {
     card.addEventListener("click", function () {
-        console.log("Gaming card clicked");
 
         const cardName = card.dataset.card;
 

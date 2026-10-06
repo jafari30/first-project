@@ -152,3 +152,8 @@
 .gaming-card-extra-content.show {
     display: block;
 }
+
+.gaming-info-card.active {
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
