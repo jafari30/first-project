@@ -1,4 +1,3 @@
-console.log("AI Details javascript connected")
 
 const aiImage = document.querySelector(".ai-detail-image");
 const aiContent = document.querySelector(".ai-detail-content");

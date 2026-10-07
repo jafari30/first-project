@@ -1,3 +1,21 @@
+const mobileImage = document.querySelector(".mobile-detail-image");
+const mobileContent = document.querySelector(".mobile-detail-content");
+
+mobileImage.classList.add("show");
+mobileContent.classList.remove("show");
+setTimeout(function () {
+    mobileImage.classList.add("show");
+}, 100);
+
+setTimeout(function () {
+    mobileContent.classList.add("show");
+}, 600);
+
+
+
+
+
+
 const mobileCards = document.querySelectorAll(".mobile-info-card");
 const mobileExtraInfo = document.querySelector(".mobile-card-extra-info");
 const mobileExtraContent = document.querySelectorAll(".mobile-card-extra-content");
