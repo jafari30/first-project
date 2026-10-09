@@ -249,3 +249,7 @@
 .comparison-table thody tr:last-child td {
     border-bottom: none;
 }
+
+.comparison-result {
+    display: none;
+}
