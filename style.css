@@ -460,6 +460,7 @@ nav a:hover {
 
 .article-category {
     display: inline-block;
+    width: fit-content;
     padding: 5px 10px;
     background-color: #eff6ff;
     color: #2563eb;
@@ -468,6 +469,8 @@ nav a:hover {
     font-weight: 700;
     margin-bottom: 10px;
 }
+
+
 
 .article-content h3 {  
     font-size: 20px;
