@@ -3,7 +3,10 @@ const brandSelectButtons = document.querySelectorAll(".brand-select-btn");
 const selectedBrands = [];
 
 const comparisonResults = document.querySelector("#comparisonResults");
+comparisonResults.hidden = false;
 const comparisonResultsContent = document.querySelector("#comparisonResultsContent");
+const compareSelectedBtn = document.querySelector("#compareSelectedBtn");
+const selectedBrandsCount = document.querySelector("#selectedBrandsCount");
 
 const brandInformation = document.querySelector("#brandInformation");
 
@@ -16,6 +19,7 @@ const brandInnovation = document.querySelector("#brandInnovation");
 const brandGlobal = document.querySelector("#brandGlobal");
 
 const brandSales = document.querySelector("#brandSales");
+
 
 
 
@@ -102,8 +106,43 @@ brandSelectButtons.forEach(function (button) {
             selectedBrands.splice(brandIndex, 1);
             button.textContent = "Add to Compare";
         }
+        selectedBrandsCount.textContent = selectedBrands.length;
         console.log(selectedBrands);
 
         
+    });
+});
+
+
+compareSelectedBtn.addEventListener("click", function () {
+    comparisonResultsContent.innerHTML = "";
+
+    console.log(selectedBrands);
+
+    if (selectedBrands.length < 2) {
+        alert("Please select at least two brands to compare.");
+        return;
+    }
+    selectedBrands.forEach(function (brandName) {
+        const information = brandData[brandName];
+        const brandBox = document.createElement("div");
+        brandBox.classList.add("comparison-brand-box");
+
+        brandBox.innerHTML = ` <h3>${brandName}</h3>
+        <h4>History</h4>
+        <p>${information.history}</p>
+
+        <h4>Innovation</h4>
+        <p>${information.innovation}</p>
+
+        <h4>Global Presence</h4>
+        <p>${information.global}</p>
+
+        <h4>Sales & Market</h4>
+        <p>${information.sales}</p>
+        `;
+
+        comparisonResultsContent.appendChild(brandBox);
+                   
     });
 });

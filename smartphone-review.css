@@ -565,3 +565,140 @@
         font-size: 23px;
     }
 }
+
+.comparison-results {
+    width: 92%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f0f7ff, #ffffff);
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+
+
+}
+
+.comparison-results h2 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+.comparison-results h2::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #93c5fd);
+    border-radius: 10px;
+    margin: 14px auto 0;
+}
+
+.comparison-results-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.comparison-brand-box {
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(30, 64, 175, 0.06);
+}
+
+.comparison-brand-box h3 {
+    color: #2563eb;
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.comparison-brand-box h4 {
+    color: #334155;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.comparison-brand-box p {
+    color: #475569;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .comparison-results-content {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-results {
+        padding: 20px;
+
+    }
+}
+
+.compare-selected-btn {
+    display: block;
+    margin: 35px auto 0;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+    transition: all o.3s ease;
+
+}
+
+.compare-selected-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    box-shadow: 0 9px 22px rgba(37, 99, 235, 0.3);
+    transform: translateY(-3px);
+}
+
+.compare-selected-btn:active {
+    transform: translateY(0);
+}
+
+.selected-brands-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.06);
+    transition: all 0.3s ease;
+
+}
+
+.#selectedBrandCount {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 8px;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
