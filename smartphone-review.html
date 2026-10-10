@@ -30,7 +30,7 @@
             </div>
         </section>
 
-        <section class="brand-coparison">
+        <section class="brand-comparison">
             <div class="section-heading">
                 <span>GLOBAL TECHNOLOGY</span>
                 <h2>Smartphone Brand Comparison</h2>
@@ -53,6 +53,8 @@
                     <button class="brand-open-btn" type="button" aria-label="Explore Samsung">
                         <i class="bi bi-arrow-right"></i>
                     </button>
+
+                    <button class="brand-select-btn" type="button">Add to Compare</button>
                 </article>
                 
                 <!-- اپل -->
@@ -66,6 +68,8 @@
                     <button class="brand-open-btn" type="button" aria-label="Explore Apple">
                         <i class="bi bi-arrow-right"></i>
                     </button>
+
+                    <button class="brand-select-btn" type="button">Add to Compare</button>
                 </article>
                 
                 <!-- شیامی -->
@@ -79,6 +83,8 @@
                     <button class="brand-open-btn" type="button" aria-label="Explore Xiaomi">
                         <i class="bi bi-arrow-right"></i>
                     </button>
+
+                    <button class="brand-select-btn" type="button">Add to Compare</button>
                 </article>
                 
                 <!-- گوگل -->
@@ -92,7 +98,18 @@
                     <button class="brand-open-btn" type="button" aria-label="Explore Google">
                         <i class="bi bi-arrow-right"></i>
                     </button>
+
+                    <button class="brand-select-btn" type="button">Add to Compare</button>
                 </article>
+            </div>
+
+            <div class="compaeison-results" id="comparisonResults" hidden>
+                <h2>Smartphone Brand Comparison</h2>
+                <div class="comparison-result-content" id="comparisonresultContent"></div>
+
+                <button class="compare-selected-btn" id="compareSelectedBtn" type="button">Compare Selected Brands</button>
+
+
             </div>
             
             <!-- بخش معلومات برندها -->
@@ -119,6 +136,7 @@
 
                     <div class="brand-info-item">
                         <h3>Sales & Market</h3>
+                        <p id="brandSales"></p>
 
                     </div>
 
