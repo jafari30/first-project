@@ -1,3 +1,8 @@
+body {
+    background: radial-gradient(ellipse at 10% 10%, rgba(191, 219, 254, 0.45), transparent 40%), radial-gradient(ellipse at 90% 35%, rgba(221, 214, 254, 0.35), transparent 40%), #f5f9ff;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -434,12 +439,12 @@ nav a:hover {
 
 .article-card {
     flex: 1 1 calc(25% - 18px);
-    background-color: #ffffff;
+    background: linear-gradient(145deg, #ffffff 15%, #c2d1f8 120%);
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
-    transition: 0.3s;
+    border: 1px solid rgba(219, 234, 254, 0.9);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.06);
+    transition: all 0.35s ease;
    
 }
 
@@ -456,6 +461,11 @@ nav a:hover {
     height: 220px;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
+}
+
+.article-card:hover img {
+    transform: scale(1.04);
 }
 
 .article-category {
@@ -478,7 +488,10 @@ nav a:hover {
     color: #0f172a;
     margin-bottom: 10px;
     min-height: 56px;
+
 }
+
+
 
 .article-content p {
     font-size: 14px;
@@ -576,12 +589,12 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: linear-gradient(145deg, #ffffff 15%, #c2d1f8 120%);
+    border: 1px solid rgba(219, 234, 254, 0.9);
     border-radius: 18px;
     overflow: hidden;
     transition: 0.3s;
-    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.06);
 
 }
 
@@ -694,7 +707,7 @@ nav a:hover {
 
 .review-card {
     flex: 1;
-    background-color: #ffffff;
+    background: linear-gradient(145deg, #ffffff 15%, #c2d1f8 120%);
     border: 1px solid #e2e8f0;
     border-radius: 16px;
     overflow: hidden;

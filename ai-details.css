@@ -312,16 +312,26 @@ ai-read-more.clicked {
 .back-home {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin: 25px 4%;
+    justify-content: center;
+    gap: 9px;
+    margin: 25px 4% 20px;
+    padding: 10px 16px;
     color: #2563eb;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s, transform 0.3s ease;
 }
 
 .back-home:hover {
     color: #1d4ed8;
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    box-shadow: 0 5px 14px rgba(37, 99, 235, 0.12);
     transform: translateX(-3px);
 }
 
