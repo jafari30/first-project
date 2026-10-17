@@ -316,6 +316,7 @@
     color: #334155;
     font-size: 15px;
     line-height: 1.9;
+    
 
 }
 
@@ -403,4 +404,10 @@
     .brand-detail-item h3 {
         font-size: 17px;
     }
+}
+
+.computer-brand-card.active {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    transform: translateY(-4px);
 }
