@@ -17,20 +17,24 @@
             <a href="mobile-details.html">Mobile</a>
             <a href="computer-details.html">Computer</a>
             <a href="gaming-details.html">Gaming</a>
-            <a href="smartphone-review.html">Reviews</a>
+            <a href="reviews.html">Reviews</a>
         </nav>
 
         <div class="header-actions">
-            <button>
-                <span class="search-content">
-                    Search
-                    <span class="search-divider"></span>
+            <div class="search-content">
+                <input type="search" id="searchInput" placeholder="Search" aria-label="Search technology">
+                <span class="search-divider"></span>
+                <button id="searchToggle" type="button" aria-label="Start search">
                     <i class="bi bi-search"></i>
-                </span>
-            </button>
-            <!-- <button><i class="bi bi-search"></i><span>Search</span></button> -->
 
+                </button>
+
+            </div>
+            <div id="searchResults"></div>
+            
         </div>
+
+        
 
         
     </header>
@@ -229,7 +233,7 @@
                         <p>
                             Our detailed review of the latest smartphone technology, featured and performance.
                         </p>
-                        <div class="review-rating">
+                        <!-- <div class="review-rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -237,7 +241,7 @@
                             <i class="bi bi-star-fill"></i>
                             <span>4.8 / 5</span>
 
-                        </div>
+                        </div> -->
 
 
                         <a href="smartphone-review.html" class="review-btn">Read Review <i class="bi bi-arrow-right"></i></a>
@@ -258,7 +262,7 @@
                         <p>
                             A detailed look at modern laptops, performance, design and the latest features.
                         </p>
-                        <div class="review-rating">
+                        <!-- <div class="review-rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -266,7 +270,7 @@
                             <i class="bi bi-star-half"></i>
                             <span>4.6 / 5</span>
 
-                        </div>
+                        </div> -->
                         <a href="computer-review.html" class="review-btn">Read Review <i class="bi bi-arrow-right"></i></a>
 
                     </div>
@@ -285,7 +289,7 @@
                         <p>
                             Explore sound quality, design, comfort and features of modern Headphones.
                         </p>
-                        <div class="review-rating">
+                        <!-- <div class="review-rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -293,7 +297,7 @@
                             <i class="bi bi-star-fill"></i>
                             <span>4.7 / 5</span>
 
-                        </div>
+                        </div> -->
                         <a href="#" class="review-btn">Read Review <i class="bi bi-arrow-right"></i></a>
 
                     </div>
@@ -313,7 +317,7 @@
                         <p>
                             A closer look at modern Smartwatches, features, design and everyday usability.
                         </p>
-                        <div class="review-rating">
+                        <!-- <div class="review-rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -321,7 +325,7 @@
                             <i class="bi bi-star-half"></i>
                             <span>4.4 / 5</span>
 
-                        </div>
+                        </div> -->
                         <a href="#" class="review-btn">Read Review <i class="bi bi-arrow-right"></i></a>
 
                     </div>
@@ -423,6 +427,8 @@
 
 
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+    <script src="js/search.js"></script>
 </body>
 </html>

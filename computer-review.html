@@ -22,16 +22,19 @@
         </nav>
 
         <div class="header-actions">
-            <button>
-                <span class="search-content">
-                    Search
-                    <span class="search-divider"></span>
+            <div class="search-content">
+                <input type="search" id="searchInput" placeholder="Search" aria-label="Search technology">
+                <span class="search-divider"></span>
+                <button id="searchToggle" type="button" aria-label="Start search">
                     <i class="bi bi-search"></i>
-                </span>
-            </button>
-            <!-- <button><i class="bi bi-search"></i><span>Search</span></button> -->
 
+                </button>
+
+            </div>
+            <div id="searchResults"></div>
+            
         </div>
+
     </header>
 
     <main>
@@ -785,6 +788,7 @@
 
 
       <script src="js/computer-review.js"></script>
+      <script src="js/search.js"></script>
    
     
 </body>
