@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>TechNova Research</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+     <header>
+        <div class="logo">TechNova</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ai-details.html">AI</a>
+            <a href="mobile-details.html">Mobile</a>
+            <a href="computer-details.html">Computer</a>
+            <a href="gaming-details.html">Gaming</a>
+            <a href="#">Reviews</a>
+            <a href="research.html">Research</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="search-content">
+                <input type="search" id="searchInput" placeholder="Search" aria-label="Search technology">
+                <span class="search-divider"></span>
+                <button id="searchToggle" type="button" aria-label="Start search">
+                    <i class="bi bi-search"></i>
+
+                </button>
+
+            </div>
+            <div id="searchResults"></div>
+            
+        </div>
+
+        
+    </header>
+
+    <main class="research-main">
+
+        <a href="index.html" class="back-home"><i class="bi bi-arrow-left"></i>Back to Home</a>
+
+        <section class="research-hero">
+            <span class="research-label">TechNova Research</span>
+            <h1>Discover Research. Share Knowledge</h1>
+            <p>
+                Explore scientific articles, technology research and innovative ideas. Share your knowledge and contribute to the future of technology.
+            </p>
+
+            <a href="#publishedArticles" class="research-button">Explore Articles</a>
+            <a href="#submitArticle" class="research-submit-link">Submit an Article</a>
+
+        </section>
+        
+        <!-- بخش دوم -->
+        <section class="published-articles" id="publishedArticles">
+            <div class="articles-heading">
+                <span>RESEARCH LIBRARY</span>
+                <h2>Publish Research Articles</h2>
+                <p>
+                    Discover scientific research and new ideas in technology.
+                </p>
+
+            </div>
+
+            <div class="research-articles-list">
+                <article class="research-article-card">
+                    <span class="article-category">Artificial Intelligence</span>
+                    <h3>The Role of AI in Modern Technology</h3>
+                    <p>
+                        Explore how artificial intelligence is transforming technology and supporting innovative.
+                    </p>
+                    <p class="article-author">By TechNova Research</p>
+                    <a href="ai-research-article.html" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
+
+                </article>
+
+                <article class="research-article-card">
+                    <span class="article-category">Mobile Technology</span>
+                    <h3>Understanding Modern Smartphone Technology</h3>
+                    <p>Discover the technologies behind smartphone performance, displays and cameras.</p>
+                    <p class="article-author">By TechNova Research</p>
+                    <a href="mobile-research-article.html" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
+
+                </article>
+
+                <article class="research-article-card">
+                    <span class="article-category">Computer Technology</span>
+                    <h3>The Evolution of Computer Technology</h3>
+                    <p>Learn how computer hardware continue to evolve and how it use in our life.</p>
+                    <p class="article-author">By Shamim Jafari</p>
+                    <a href="#" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="submit-article-section" id="submitArticle">
+            <div class="submit-article-heading">
+                <span>CONTINUE TO TECHNOVA</span>
+                <h2>Submit Your Research Article</h2>
+                <p>Share your research and contribute to the world of technology.</p>
+
+            </div>
+
+            <!-- فبلدهای فرم ارسال -->
+             <form class="submit-article-form" id="submitArticleForm">
+                <div class="form-group">
+                    <label for="articleTitle">Article Title</label>
+                    <input type="text" id="articleTitle" name="articleTitle" placeholder="Enter your article title" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="authorName">Author Name</label>
+                    <input type="text" id="authorName" name="authorName" placeholder="Enter your full name" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="authorEmail">Email Address</label>
+                    <input type="email" id="authorEmail" name="authorEmail" placeholder="Enter your email address" required>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="articleCategory">Article Category</label>
+                    <select id="articleCategory" name="articleCategory" required>
+                        <option value="">Select a Category</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Mobile Technology">Mobile Technology</option>
+                        <option value="Computer Technology">Computer Technology</option>
+                        <option value="Gaming Technology">Gaming Technology</option>
+                        <option value="Other Technology">Other Technology</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleAbstruct">Article Abstruct</label>
+                    <textarea id="articleAbstruct" name="articleAbstruct" rows="4" placeholder="Write a short summery of your research" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleContent">Article Content</label>
+                    <textarea name="articleContent" id="articleContent" rows="8" placeholder="Write your research article here" required></textarea>
+
+                </div>
+
+                <button type="submit" class="submit-article-button">Submit Article</button>
+
+                <p class="article-form-message" aria-live="polite"></p>
+             </form>
+
+        </section>
+
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>TechNova</h3>
+                <p>
+                    Your source for the latest Technology news, trends and innovations.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">AI</a>
+                <a href="#">Mobile</a>
+                <a href="#">Computer</a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#">Gaming</a>
+                <a href="#">Reviews</a>
+                <a href="#">latest-articles</a>
+                <a href="#">Featured</a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <a href="#">Email Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Conditions</a>
+                <a href="mailto:info@technova.com"><i class="bi bi-envelope"></i>info@technova.com</a>
+               
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p><i class="bi bi-c-circle"></i>2026 TechNova. All rights reserved.</p>
+
+        </div>
+       
+
+      </footer>
+
+
+      <script src="js/search.js"></script>
+      <script src="js/research.js"></script>
+
+</body>
+
+</html>
