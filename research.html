@@ -66,32 +66,54 @@
 
             </div>
 
+            <div class="research-search-filter">
+                <input type="text" id="articleSearch" placeholder="Search article...">
+                <select id="articleCategory">
+                    <option value="all">All Categories</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="mobile">Mobile Technology</option>
+                    <option value="computer">Computer Technology</option>
+                </select>
+
+                <select id="articleSort">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+
+            </div>
+
             <div class="research-articles-list">
-                <article class="research-article-card">
+
+                <p id="noArticlesMessage" style="display: none;">No article Found.</p>
+
+                <article class="research-article-card" data-category="ai">
                     <span class="article-category">Artificial Intelligence</span>
                     <h3>The Role of AI in Modern Technology</h3>
                     <p>
                         Explore how artificial intelligence is transforming technology and supporting innovative.
                     </p>
                     <p class="article-author">By TechNova Research</p>
+                    <p class="article-date">published: October 26, 2026</p>
                     <a href="ai-research-article.html" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
 
                 </article>
 
-                <article class="research-article-card">
+                <article class="research-article-card" data-category="mobile">
                     <span class="article-category">Mobile Technology</span>
                     <h3>Understanding Modern Smartphone Technology</h3>
                     <p>Discover the technologies behind smartphone performance, displays and cameras.</p>
                     <p class="article-author">By TechNova Research</p>
+                    <p class="article-date">published: October 23, 2026</p>
                     <a href="mobile-research-article.html" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
 
                 </article>
 
-                <article class="research-article-card">
+                <article class="research-article-card" data-category="computer">
                     <span class="article-category">Computer Technology</span>
                     <h3>The Evolution of Computer Technology</h3>
                     <p>Learn how computer hardware continue to evolve and how it use in our life.</p>
                     <p class="article-author">By Shamim Jafari</p>
+                    <p class="article-date">published: October 27, 2026</p>
                     <a href="computer-research-article.html" class="read-article-link">Read Article <i class="bi bi-arrow-right"></i></a>
 
                 </article>
