@@ -10,31 +10,7 @@ researchForm.addEventListener("submit", function (event) {
 });
 
 
-// // نمایش دکمه explore
-// const exploreArticleButton = document.querySelector('.research-button');
-// const publishedArticlesSection = document.querySelector('#publishedArticles');
 
-// exploreArticleButton.addEventListener('click', function (event) {
-//     event.preventDefault();
-//     publishedArticlesSection.style.display = 'block';
-//     publishedArticlesSection.scrollIntoView({
-//         behavior: 'smooth'
-//     });
-// });
-
-
-// // نمایش دکمه submit 
-// const submitArticleLink = document.querySelector('.research-submit-link');
-// const submitArticleSection = document.querySelector('#submitArticle');
-
-// submitArticleLink.addEventListener('click', function (event) {
-//     event.preventDefault();
-
-//     submitArticleSection.style.display = 'block';
-//     submitArticleSection.scrollIntoView({
-//         behavior: 'smooth'
-//     });
-// });
 
 const exploreArticlesButton = document.querySelector(".research-button");
 const submitArticleLink = document.querySelector(".research-submit-link");
