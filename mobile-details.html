@@ -11,10 +11,50 @@
 <body>
 
     <header>
-        <div class="logo">TechNova</div>
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="TN star logo" rol="img">
+                    <defs>
+                        <linearGradient id="logoGlow" x1="0" y1="0" x2="1" y2="1">
+                            <stop offest="0%" stop-color="#38bdf8"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- <path d="M8 42 c17 56, 39 55, 51 33" fill="none" stroke="url(#logoGlow)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M9 22 L9 12 L43 12" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/> -->
+
+                    <text x="7" y="40" font-size="32" font-weight="800" font-family="Arial, sans-serif" fill="#ffffff">TN</text>
+
+                    <path d="M58 1 L61 9 L69 12 L61 15 L58 23 L55 15 L47 12 L55 9 Z" fill="url(#logoGlow)"/>
+                    <!-- <circle cx="16" cy="51" r="2" fill="#38bdf8"/> -->
+                </svg>
+            </span>
+
+
+            <span class="logo-text">
+                <span class="logo-name">
+                    <span class="logo-tech">Tech</span>
+                    <span class="logo-nova">Nova</span>
+                </span>
+                <span class="logo-slogan">INNOVATION FOR SMARTER TOMORROW</span>
+            </span>
+         </a>
+         
         <nav>
             <a href="index.html">Home</a>
-            <a href="ai-details.html">AI</a>
+            <div class="nav-dropdown">
+                <a href="ai-details.html" class="nav-link">AI</a>
+                <div class="dropdown-menu">
+                    <a href="ai-details.html#what-is-ai">What is AI</a>
+                    <a href="ai-details.html#ai-applications">Applications</a>
+                    <a href="ai-details.html#future-impact">Future Impact</a>
+                    <a href="ai-details.html#more-about-ai">More About Artificial Intelligence</a>
+                    <a href="ai-details.html#ai-everyday-life">AI in Everyday Life</a>
+                    <a href="ai-details.html#how-ai-learns">How AI Learns</a>
+                    <a href="ai-details.html#ai-technology">AI Technology</a>
+                </div>
+            </div>
             <a href="mobile-details.html">Mobile</a>
             <a href="computer-details.html">Computer</a>
             <a href="gaming-details.html">Gaming</a>
@@ -68,7 +108,7 @@
                     <!-- دوم -->
                     <div class="mobile-info-card" data-card="features">
                         <i class="bi bi-gear"></i>
-                        <h3>Key features</h3>
+                        <h3>Key Features</h3>
                         <p>
                             Explore powerful features and technologies in smartphones.
                         </p>
@@ -88,21 +128,21 @@
 
         <!-- توضیحات کارت ها -->
          <div class="mobile-card-extra-info">
-            <div class="mobile-card-extra-content" data-card="innovations">
+            <div class="mobile-card-extra-content" data-card="innovations" id="smartphone-innovations">
                 <h3>Smartphone Innovations</h3>
                 <p>
                     Modern smartphone are becoming more powerful through advanced processors,improved cameras, better displays and innovations designs.
                 </p>
             </div>
 
-            <div class="mobile-card-extra-content" data-card="features">
+            <div class="mobile-card-extra-content" data-card="features" id="features">
                 <h3>Key Features</h3>
                 <p>
                     Today's smartphone offer powerful processors, high-quality cameras, fast connectivily, long-lasting batteries and advanced displays.
                 </p>
             </div>
 
-            <div class="mobile-card-extra-content" data-card="future">
+            <div class="mobile-card-extra-content" data-card="future" id="future-of-mobile">
                 <h3>Future of Mobile</h3>
                 <p>
                     Future mobile technology may bring smarter devices, improved connectivily and new experiences powerd by artificial intelligence.
