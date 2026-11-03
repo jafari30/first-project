@@ -183,3 +183,80 @@
     box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
 }
 
+@media (max-width: 768px) {
+    .computer-detail {
+        flex-direction: column;
+        width: 92%;
+        margin: 30px auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .computer-detail-image {
+        width: 100%;
+    }
+
+    .computer-detail-image img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .computer-detail-content {
+        width: 100%;
+        padding: 15px 5px;
+        box-sizing: border-box;
+    }
+
+    .computer-detail-content h1 {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .computer-detail-content > p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .computer-info-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .computer-card-extra-info {
+        width: 92%;
+        padding: 20px;
+        margin: 20px auto 40px;
+    }
+
+    .computer-card-extra-content h3 {
+        font-size: 21px;
+    }
+
+    .computer-card-extra-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .back-home {
+        margin: 20px 4%;
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+
+    .computer-info-card {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .computer-info-card h3, .computer-info-card p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+}
+

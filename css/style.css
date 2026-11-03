@@ -608,6 +608,7 @@ nav a:hover {
         width: 100%;
         min-height: 550px;
         padding: 35px 25px;
+        background-image: url("../images/hero/tech.mobile.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
