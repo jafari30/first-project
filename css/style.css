@@ -424,6 +424,11 @@ nav a:hover {
     transition: 0.4s ease;
 }
 
+.hero.icons-visible .hero-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .icon-label {
     position: absolute;
     top: 100%;
@@ -439,23 +444,38 @@ nav a:hover {
     transform: scale(1);
 }
 
-.hero:has(.brain-trigger:hover) .icon-ai {
+/* .hero:has(.brain-trigger:hover, .hero-icon:hover) .icon-ai {
     transform: translate(-25px, -20px) scale(1);
 }
 
-.hero.hero:has(.brain-trigger:hover) .icon-mobile {
+.hero.hero:has(.brain-trigger:hover, .hero-icon:hover) .icon-mobile {
     transform: translate(25px, -15px) scale(1);
 }
 
-.hero.hero:has(.brain-trigger:hover) .icon-computer {
+.hero.hero:has(.brain-trigger:hover, .hero-icon:hover) .icon-computer {
     transform: translate(30px, 10px) scale(1);
 }
 
-.hero.hero:has(.brain-trigger:hover) .icon-gaming {
+.hero.hero:has(.brain-trigger:hover, .hero-icon:hover) .icon-gaming {
     transform: translate(20px, 25px) scale(1);
 }
 
-.hero.hero:has(.brain-trigger:hover) .icon-reviews {
+.hero.hero:has(.brain-trigger:hover, hero-icon:hover) .icon-reviews {
+    transform: translate(-25px, 20px) scale(1);
+} */
+.hero.icons-visible .icon-ai {
+    transform: translate(-25px, -20px) scale(1);
+} 
+
+.hero.icons-visible .icon-mobile {
+    transform: translate(25px, -15px) scale(1);
+}
+
+.hero.icons-visible .icon-computer {
+    transform: translate(30px, 10px) scale(1);
+}
+
+.hero.icons-visible .icon-reviews {
     transform: translate(-25px, 20px) scale(1);
 }
 
