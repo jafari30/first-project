@@ -1538,6 +1538,64 @@ nav a:hover {
     }
 }
 
+/* کارت های خبری انمیشن */
+.latest-articles .section-heading,
+.latest-articles .article-card  {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.latest-articles .article-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.latest-articles .section-heading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* انیمیشن بخشfeatured */
+.featured-section .section-heading,
+.featured-section .featured-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.featured-section .section-heading.show,
+.featured-section .featured-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* بخش انیمیشن reviews  */
+.reviews-section .section-heading,
+.reviews-section .review-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reviews-section .section-heading.show,
+.reviews-section .review-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* انیمیشن بخش newsletter */
+.newsletter-content > * {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.newsletter-content > *.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 

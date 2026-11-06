@@ -1,19 +1,127 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+    <meta name="description" content="Explore the future of artificial intelligence, its evolution, real-world applications and its impact on modern technology.">
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>The Future of Artificial Intelligence | TechNova</title>
     <link rel='stylesheet' href='css/style.css'>
     <link rel="stylesheet" href="css/featured-ai-article.css">
-    <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap-icons@1.11.3/font/bootsrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap-icons@1.11.3/font/bootsrap-icons.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="article-header">
-        <a href="index.html" class="article-logo">Tech <span>Nova</span></a>
-        <a href="index.html" class="article-back-link">
-            <i class="bi bi-arrow-left"></i>Back to Home</a>
+    <header>
+        
+         <a href="index.html" class="logo">
 
+            <span class="logo-icon">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="TN star logo" rol="img">
+                    <defs>
+                        <linearGradient id="logoGlow" x1="0" y1="0" x2="1" y2="1">
+                            <stop offest="0%" stop-color="#38bdf8"/>
+                        </linearGradient>
+                    </defs>
+
+                    
+
+                    <text x="7" y="40" font-size="32" font-weight="800" font-family="Arial, sans-serif" fill="#ffffff">TN</text>
+
+                    <path d="M58 1 L61 9 L69 12 L61 15 L58 23 L55 15 L47 12 L55 9 Z" fill="url(#logoGlow)"/>
+                    
+                </svg>
+            </span>
+
+
+            <span class="logo-text">
+                <span class="logo-name">
+                    <span class="logo-tech">Tech</span>
+                    <span class="logo-nova">Nova</span>
+                </span>
+                <span class="logo-slogan">INNOVATION FOR SMARTER TOMORROW</span>
+            </span>
+         </a>
+
+         <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="bi bi-first"></i>
+
+         </button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="nav-dropdown">
+                <a href="ai-details.html" class="nav-link">AI</a>
+                <div class="dropdown-menu">
+                    <a href="ai-details.html#what-is-ai">What is AI</a>
+                    <a href="ai-details.html#ai-applications">Applications</a>
+                    <a href="ai-details.html#future-impact">Future Impact</a>
+                    <a href="ai-details.html#more-about-ai">More About Artificial Intelligence</a>
+                    <a href="ai-details.html#ai-everyday-life">AI in Everyday Life</a>
+                    <a href="ai-details.html#how-ai-learns">How AI Learns</a>
+                    <a href="ai-details.html#ai-technology">AI Technology</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="mobile-details.html" class="nav-link">Mobile</a>
+                <div class="dropdown-menu">
+                    <a href="mobile-details.html#smartphone-innovations">Smartphone Innovations</a>
+                    <a href="mobile-details.html#key-features">key Features</a>
+                    <a href="mobile-details.html#future-of-mobile">Future of Mobile</a>
+
+                </div>
+
+            </div>
+            <div class="nav-dropdown">
+                <a href="computer-details.html" class="nav-link">Computer</a>
+                <div class="dropdown-menu">
+                    <a href="computer-details.html#modern-hardware">Modern Hardware</a>
+                    <a href="computer-details.html#powerful-processors">Powerful Processors</a>
+                    <a href="computer-details.html#future-of-computing">Future of Computing</a>
+
+                </div>
+
+            </div>
+            <div class="nav-dropdown">
+                <a href="gaming-details.html" class="nav-link">Gaming</a>
+                <div class="dropdown-menu">
+                    <a href="gaming-details.html#gaming-hardware">Gaming Hardware</a>
+                    <a href="gaming-details.html#gaming-technology">Gaming Technology</a>
+                    <a href="gaming-details.html#future-of-gaming">Future of Gaming</a>
+
+                </div>
+
+            </div>
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link">Reviews</a>
+                <div class="dropdown-menu">
+                    <a href="smartphone-review.html">Smartphone Review</a>
+                    <a href="computer-review.html">Computer Review</a>
+                    <a href="headphones-review.html">Headphones Review</a>
+                    <a href="smartwatch-review">Smartwatch Review</a>
+
+                </div>
+
+            </div>
+            <a href="research.html">Research</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="search-content">
+                <input type="search" id="searchInput" placeholder="Search" aria-label="Search technology">
+                <span class="search-divider"></span>
+                <button id="searchToggle" type="button" aria-label="Start search">
+                    <i class="bi bi-search"></i>
+
+                </button>
+
+            </div>
+            <div id="searchResults"></div>
+            
+        </div>
+
+        
+
+        
     </header>
 
     <main>
@@ -47,8 +155,154 @@
 
             </div>
 
+            <div class="article-layout">
+                <aside class="article-toc">
+                    <h3>Table of Contents</h3>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#ai-evolution">Evolution of AI</a>
+                    <a href="#ai-application">Application of AI</a>
+                    <a href="#future-ai">The Future of AI</a>
+                    <a href="#conclusion">Conclusion</a>
+
+                </aside>
+
+                <div class="article-main">
+                    <section id="introduction">
+                        <h2>Introduction</h2>
+
+                        <img src="images/ai/article.png" alt="Artificial Intelligence and Human Technology" class="article-intro-image">
+                        <p>
+                            Artificial Intelligence is transforming the modern world. From smart assistants to advanced technologies, AI is changing how peaple work, learn and interact with technology.Artificial Intelligence is transforming the modern world. From smart assistants to advanced technologies, AI is changing how peaple work, learn and interact with technology.
+                            Artificial Intelligence is transforming the modern world. From smart assistants to advanced technologies, AI is changing how peaple work, learn and interact with technology.Artificial Intelligence is transforming the modern world. From smart assistants to advanced technologies, AI is changing how peaple work, learn and interact with technology.Artificial Intelligence is transforming the modern world. From smart assistants to advanced technologies, AI is changing how peaple work, learn and interact with technology.
+                    
+                        </p>
+
+                    </section>
+
+                    <section id="ai-evolution">
+                        <h2>The Evolution of Artificial Intelligence</h2>
+                        <img src="images/ai/evolu.jpg" alt="The Evolution of Artificial Intelligence" class="article-intro-image">
+                        <p>
+                            Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.
+                            Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.
+                            Artificial Intelligence has developed significantly over the past decades. Early AI systems focused on simple tasks and rule-based operations. Today, advanced machine learning and deep learning technologies allow computers to analyze data, recognize patterns and solve complex problems.
+                        </p>
+
+                    </section>
+
+                    <section id="ai-application">
+                        <h2>Applications of Artificial Intelligence</h2>
+                        <img src="images/ai/concl.png" alt="Applications of Artificial Intelligence" class="article-intro-image">
+                        <p>
+                            Artificial Intelligence is used in many areas of modern life. In healtcare, it helps analyze medical data. In education, it supports personalized learning. In transportation, AI helps improve navigation and traffic management. these applications show how AI is becoming an important part of everyday technology.
+                            Artificial Intelligence is used in many areas of modern life. In healtcare, it helps analyze medical data. In education, it supports personalized learning. In transportation, AI helps improve navigation and traffic management. these applications show how AI is becoming an important part of everyday technology.Artificial Intelligence is used in many areas of modern life. In healtcare, it helps analyze medical data. In education, it supports personalized learning. In transportation, AI helps improve navigation and traffic management. these applications show how AI is becoming an important part of everyday technology.Artificial Intelligence is used in many areas of modern life. In healtcare, it helps analyze medical data. In education, it supports personalized learning. In transportation, AI helps improve navigation and traffic management. these applications show how AI is becoming an important part of everyday technology.
+                            Artificial Intelligence is used in many areas of modern life. In healtcare, it helps analyze medical data. In education, it supports personalized learning. In transportation, AI helps improve navigation and traffic management. these applications show how AI is becoming an important part of everyday technology.
+                        </p>
+
+                    </section>
+
+                    <section id="future-ai">
+                        <h2>The Future of Artificial Intelligence</h2>
+                        <img src="images/ai/future.png" alt="The Future of Artificial Intelligence" class="article-intro-image">
+                        <p>
+                            The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.
+                            The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.
+                            The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.
+                            The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.The future of Artificial Intelligence is full of possibilities. AI may help scientists make new discoveries, improve education and develop smarter technologies. As AI continues to advance, responsible development and human oversight will remain important.
+                        </p>
+
+                    </section>
+
+                    <section id="conclusion">
+                        <h2>Conclusion</h2>
+                        <img src="images/ai/last.png" alt="Conclusion" class="article-intro-image">
+                        <p>
+                            Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.
+                            Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.
+                            Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.
+                            Artificial Intelligence is shaping the future of technology and changing the way peaple live and work. From healtcare and education to scientific research, AI offers many opportunities. By developing and using it responsibly, we can built a smarter and more innovation future.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
         </section>
     </main>
+
+    <div class="back-home-container">
+        <a href="index.html" class="back-home">
+            <i class="bi bi-arrow-left"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+
+
+    <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>TechNova</h3>
+                <p>
+                    Your source for the latest Technology news, trends and innovations.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">AI</a>
+                <a href="#">Mobile</a>
+                <a href="#">Computer</a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#">Gaming</a>
+                <a href="#">Reviews</a>
+                <a href="#">latest-articles</a>
+                <a href="#">Featured</a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <a href="#">Email Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Conditions</a>
+                <a href="mailto:info@technova.com"><i class="bi bi-envelope"></i>info@technova.com</a>
+               
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p><i class="bi bi-c-circle"></i>2026 TechNova. All rights reserved.</p>
+
+        </div>
+       
+
+      </footer>
+
+
+      <script src="js/featured-ai-article.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/index.js"></script>
     
 </body>
 </html>
