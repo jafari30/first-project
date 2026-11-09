@@ -1,0 +1,278 @@
+/* گزینه برگشت */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 25px 4% 20px;
+    padding: 10px 16px;
+    color: #2563eb;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s, transform 0.3s ease;
+}
+
+.smartwatch-hero {
+    width: 92%;
+    max-width: 1250px;
+    min-height: 350px;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 35px;
+    border-radius: 22px;
+
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+.smartwatch-hero-image {
+    width: 45%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.smartwatch-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.smartwatch-hero-content {
+    width: 55%;
+    text-align: left;
+}
+
+.smartwatch-hero-label {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.smartwatch-hero-content h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.smartwatch-hero-content p {
+    color: #dbeafe;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.smartwatch-brands-section {
+    width: 92%;
+    max-width: 1250px;
+    margin: 70px auto;
+}
+
+.smartwatch-section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.smartwatch-section-heading span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.smartwatch-section-heading h2 {
+    color: #0f172a;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.smartwatch-section-heading p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.smartwatch-brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.smartwatch-brand-card {
+    flex: 1 1 160px;
+    max-width: 190px;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* .smartwatch-brand-card img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.smartwatch-brand-card h3 {
+    margin: 0;
+    font-size: 15px;
+} */
+
+.smartwatch-brand-card h3 {
+    color: #0f172a;
+    font-size: 19px;
+}
+
+.smartwatch-brand-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+
+
+.smartwatch-brand-information {
+    display: none;
+    margin-top: 35px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+.smartwatch-brand-information > span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.smartwatch-brand-information h2 {
+    color: #0f172a;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.smartwatch-brand-information p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+#smartwatchBrandDetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.smartwatch-detail-item {
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.smartwatch-detail-item h3 {
+    color: #1e40af;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.smartwatch-detail-item p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.7;
+}
+@media (max-width: 768px) {
+
+    .smartwatch-hero {
+        flex-direction: column;
+        gap: 20px;
+        padding: 22px;
+        min-height: auto;
+    }
+
+    .smartwatch-hero-image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .smartwatch-hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .smartwatch-hero-content h1 {
+        font-size: 27px;
+    }
+
+    .smartwatch-hero-content p {
+        font-size: 14px;
+    }
+
+    .smartwatch-brands-section {
+        width: 88px;
+        margin: 45px auto;
+    }
+
+    .smartwatch-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .smartwatch-section-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .smartwatch-brands-container {
+        gap: 16px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .smartwatch-brand-card {
+        flex: 1 1 130px;
+        min-height: 95px;
+    }
+
+    .smartwatch-brand-card h3 {
+        font-size: 16px;
+    }
+
+    .smartwatch-brand-information {
+        padding: 20px;
+    }
+
+    #smartwatchBrandDetails {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .smartwatch-detail-item {
+        padding: 16px;
+    }
+
+    .smartwatch-brand-information h2 {
+        font-size: 22px;
+    }
+
+}

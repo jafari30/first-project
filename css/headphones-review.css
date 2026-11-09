@@ -1,0 +1,267 @@
+
+.headphones-hero {
+    width: 92%;
+    max-width: 1250px;
+    min-height: 350px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    gap: 35px;
+    border-radius: 22px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f172a, #1e40af, #172554);
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.20);
+}
+
+.headphones-hero-content {
+    max-width: 850px;
+}
+
+.headphones-hero-label {
+    display: inline-block;
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+.headphones-hero h1 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.headphones-hero p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* کارت های برند */
+
+.headphones-brands-section {
+    padding: 80px 5%;
+    background: transparent;
+}
+
+.headphones-brands-section .section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.headphones-brands-section .section-heading span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.headphones-brands-section .section-heading p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.headphones-barnds-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.headphone-brand-card {
+    width: 160px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.headphone-brand-card h3 {
+    color: #0f172a;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.headphone-brand-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+
+/* اطلاعات برندها */
+
+.headphone-brand-information {
+    padding: 60px 5%;
+    background: transparent;
+}
+
+.headphone-brand-information .brand-information-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+}
+
+.headphone-brand-information .brand-information-content > span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.headphone-brand-information h2 {
+    color: #0f172a;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.headphone-brand-information p {
+    color: #64748b;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#headphoneBrandDetails {
+    margin-top: 25px;
+}
+
+#headphoneBrandDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#headphoneBrandDetails > div {
+    flex: 1 1 280px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+#headphoneBrandDetails > div:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.10);
+}
+
+.#headphoneBrandDetails h3 {
+    color: #2563eb;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.#headphoneBrandDetails p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+    .headphones-brands-section {
+        padding: 50px 5%;
+    }
+
+    .headphones-brands-section .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .headphone-brand-information {
+        padding: 40px 5%;
+    }
+
+    .headphone-brand-information .brand-information-content {
+        padding: 25px 18px;
+    }
+
+    .headphone-brand-information h2 {
+        font-size: 24px;
+    }
+
+    .#headphoneBrandDetails > div {
+        flex: 1 1 100%;
+    }
+
+    .headphones-hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .headphones-hero-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+
+    }
+
+    .headphones-hero-content {
+        text-align: center;
+    }
+
+    .headphones-hero h1 {
+        font-size: 28px;
+    }
+
+    .headphones-hero p {
+        font-size: 15px;
+    }
+
+    .back-home {
+        width: auto;
+        max-width: none;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+body {
+    background: #e5ecf3;
+
+}
+
+main {
+    background: radial-gradient(circle at 10% 20%, rgba(96, 165, 250, 0.12), transparent 35%), radial-gradient(circle at 90% 80%, rgba(37, 99, 235, 0.08), transparent 35%), #c8ddf2 !;
+    
+}
+
+/* گزینه برگشت */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 25px 4% 20px;
+    padding: 10px 16px;
+    color: #2563eb;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s, transform 0.3s ease;
+}
