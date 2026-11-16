@@ -1245,6 +1245,32 @@ nav a:hover {
     
 }
 
+@media (max-width: 600px) {
+    .newsletter-message {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 12px;
+        margin: 10px auto 0;
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+        box-sizing: border-box;
+    }
+}
+
+/* .newsletter-message {
+    width: 100%;
+    max-width: 360px;
+    margin: 12px auto;
+    padding: 0 10px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+} */
+
 
 
 
@@ -1536,6 +1562,8 @@ nav a:hover {
         width: 100%;
         box-sizing: border-box;
     }
+
+    
 }
 
 /* کارت های خبری انمیشن */
